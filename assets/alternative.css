@@ -163,11 +163,10 @@ th, td {
 }
 
 .top-left {
-    font-size: 3rem; /* Reduce size for mobile */
-    color: #505050;
-    background: #fafafa;
-    text-align: center;
-    width: 100%; /* Full width */
+    font-size: 2rem; /* Reduce size for mobile */
+    color: #fafafa;
+    text-align: left;
+    width: 70%; /* Full width */
     padding: 1rem 0; /* Responsive padding */
     position: absolute; /*Consider other kind of position */
     top: 0;
@@ -193,6 +192,7 @@ th, td {
     font-size: 1em;  /* Keep these relative, they'll scale with the body */
     line-height: normal;
     text-shadow: 1px 1px 3px #c0c0c0;
+    
 }
 
 .title2 {
