@@ -14,6 +14,37 @@
 
 <body data-lang="en">
 
+    <!-- Language selector -->
+    <div>
+        <label>
+            <input type="radio" name="language" value="en">
+            English
+        </label>
+        <label>
+            <input type="radio" name="language" value="es" checked>
+            Español
+        </label>
+                <label>
+            <input type="radio" name="language" value="pt">
+            Português
+        </label>
+    </div>
+            <h1>Encuentro de la Asociación Latinoamericana de Lingüística Formal<br>Encontro da Associação Latino-Americana de Linguística Formal</h1>
+
+    <div class="banner">
+        <img width=100%, height=auto src="images/2025-banner1.jpg" alt="Conference Template Banner">
+      
+        <div lang="es" class="bottom-right">
+            26, 27 y 28 de marzo de 2026 <br> Universidad de la República, Uruguay
+        </div>
+        <div lang="pt" class="bottom-right">
+            26, 27 e 28 de março de 2026 <br> Universidad de la República, Uruguay
+        </div>
+<div lang="en" class="bottom-right">
+            March 26, 27 and 28, 2026 <br>Universidad de la República, Uruguay
+        </div>
+    </div>
+
     <div class="banner">
         <img src="assets/banner.jpg" alt="Conference Template Banner">
         <div class="top-left">
@@ -27,51 +58,122 @@
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
+                <a lang="en" class="current" title="ALLF" href="index.html">Home</a>
+                <a lang="es" class="current" title="ALLF" href="index.html">Página <br>principal</a>
+                <a lang="pt" class="current" title="ALLF" href="index.html">Página <br>inicial</a>
             </td>
             <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
+                <a lang="en" href="registration/registration.html" title="Register for the Conference" href="registration" href="registration.html">Call for papers<br>Registration</a>
+                <a lang="es" href="registration/registration.html" title="Inscripción al Encuentro" href="registration">Convocatoria<br>Inscripción</a>
+                <a lang="pt" href="registration/registration.html" title="Inscripción al Encuentro" href="registration">Chamada<br>Cadastro</a>
+            </td>
+<!--            <td class="navigation">
+                <a lang="en" title="Program" href="program/2025-program.html">Program</a> 
+                <a lang="es" title="Programa" href="program/2025-program.html">Programa</a> 
+                <a lang="pt" title="Programa" href="program/2025-program.html">Programa</a> 
+            </td>-->
+            <td class="navigation">
+                <a lang="en" title="Editions" href="previous-editions/previous-editions.html">Editions</a>
+                <a lang="es" title="Ediciones" href="previous-editions/previous-editions.html">Ediciones</a>
+                <a lang="pt" title="Edições" href="previous-editions/previous-editions.html">Edições</a>
             </td>
             <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
-            </td>
-            <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a class="current" title="Conference Flyer" href="flyer">Flyer</a>
+                <a lang="en" title="News" href="news/index.html">News</a> 
+                <a lang="es" title="Novedades" href="news/index.html">Novedades</a> 
+                <a lang="pt" title="Notícias" href="program/index.html">Notícias</a> 
             </td>
         </tr>
     </table>
 
     <br>
 
+    <h2 lang="en">Timeline</h2>
+    <h2 lang="es">Línea de tiempo</h2>
+    <h2 lang="pt">Linha do tempo</h2>
+
     <p>
-        I got lazy on this page and didn&rsquo;t mock up any template flyers for this template website.
-        So these are the flyers that <a target="_blank" href="https://math.jonathanalcaraz.com/">Jonathan Alcaraz</a>
-        designed for <a target="_blank" href="http://math.ucr.edu/~mathconn/">MathConnections 2019</a>.
-        Click on the color or grayscale flyer below to download a pdf.
+<ul class="lead">		
+<li align="justify", lang="en"><s>November 30, 2025: Dealine for submitting abstracts</s></li>
+<li align="justify", lang="en"><s>December 15, 2025: Acceptation</s></li>
+<li align="justify", lang="en">February 8, 2026: Ask for confirmation</li>
+<li align="justify", lang="en">March 26, 27 and 28, 2026: Conference</li>
+
+<li align="justify", lang="es"><s>30 de noviembre de 2025: Fecha límite para envío de propuestas</s></li>
+<li align="justify", lang="es"><s>15 de diciembre de 2025: Aceptación</s></li>
+<li align="justify", lang="es">8 de febrero de 2026: Pedido de confirmación</li>
+<li align="justify", lang="es">26, 27 y 28 de marzo de 2026: Encuentro</li>
+
+<li align="justify", lang="pt"><s>30 de novembro de 2025: Prazo final para envio de propostas</s></li>
+<li align="justify", lang="pt"><s>15 de dezembro de 2025: Aceitação</s></li>
+<li align="justify", lang="pt">8 de fevereiro de 2026: Solicitação de confirmação</li>
+<li align="justify", lang="pt">26, 27 e 28 de março de 2026: Encontro</li>
+</ul>
+
     </p>
 
-    <table class="flyers">
-        <tr>
-            <td class="flyer">
-                <a href="assets/MathConnections-Flyer.pdf">
-                    <img src="assets/MathConnections-Flyer.png" alt="MathConnections Color Flyer" style="width:100%">
-                </a>
-            </td>
-            <td class="flyer">
-                <a href="assets/MathConnections-FlyerBW.pdf">
-                    <img src="assets/MathConnections-FlyerBW.png" alt="MathConnections BW Flyer" style="width:100%">
-                </a>
-            </td>
-        </tr>
-    </table>
 
-    <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+    <h2 lang="en">Organizing Committee</h2>
+    <h2 lang="es">Comité organizador</h2>
+    <h2 lang="pt">Comissão organizadora</h2>
+    <p>
+
+<ul class="lead">		
+<li align="justify">Andrea Bohrn (UNGS, UBA)</li>
+<li align="justify">Fernando Carranza (UBA) <a href="https://fernando-carranza.github.io/index.html" target="_blank"><img src="images/webpage.svg" alt="" width="26" height="26" title="Página Web"></a>
+                    <a href="https://github.com/fernandocar86" target="_blank"><img src="images/github.svg" alt="" width="26" height="26" title="GitHub"></a> </li>
+<li align="justify">Fernando Chapa Barrios (El Colegio de México (Colmex))</li>
+<li align="justify">Carolina Oggiani	(Udelar)</li>
+<li align="justify">Ana Clara Polakof	(UDELAR/SNI)</li>
+<li align="justify">Rafael Herrera Jiménez 	(FFyL-UNAM)	<a href="https://colmex.academia.edu/RafaelHerrera" target="_blank"><img src="images/webpage.svg" alt="" width="26" height="26" title="Página Web"></a></li>
+
+<li align="justify">Luciana Sanchez-Mendes (Universidade Federal Fluminense)	<a href="https://sanchezmendes.wordpress.com/" target="_blank"><img src="images/webpage.svg" alt="" width="26" height="26" title="Página Web"></a></li>
+<li align="justify">Romina Trebisacce (UBA)</li>
+</ul>
+
+<br>
+Este sitio está construido por sobre la plantilla diseñada por <a href="https://github.com/mikepierce">Mike Pierce</a>
+  </footer>
+ 
+   <footer lang="pt">
+    Asociación Latinoamericana de Lingüística Formal / Associação Latino-Americana de Linguística Formal (ALLF)<br>
+    allingformal@gmail.com
+    <br>
+<!--<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a> 
+<a href="https://www.instagram.com/encuentrodegramaticagenerativa/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a><br>-->
+Este site foi construído com base no modelo desenvolvido por <a href="https://github.com/mikepierce">Mike Pierce</a>
+  </footer>
+ 
+      <footer lang="en">
+    Asociación Latinoamericana de Lingüística Formal / Associação Latino-Americana de Linguística Formal (ALLF)<br>
+    allingformal@gmail.com
+        <br>
+<!--<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a>
+<a href="https://www.instagram.com/encuentrodegramaticagenerativa/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a> -->
+<br>
+        This webpage is build over the template designed by <a href="https://github.com/mikepierce">Mike Pierce</a>
+
     </footer>
+
+<script>
+        // Language switching functionality
+        document.querySelectorAll('input[name="language"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                document.body.setAttribute('data-lang', this.value);
+                
+                // Optional: Store language preference in localStorage
+                localStorage.setItem('preferredLanguage', this.value);
+            });
+        });
+
+        // Check for saved language preference on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            if (savedLanguage) {
+                document.querySelector(`input[name="language"][value="${savedLanguage}"]`).checked = true;
+                document.body.setAttribute('data-lang', savedLanguage);
+            }
+        });
+    </script>
 
 </body>
 </html>
