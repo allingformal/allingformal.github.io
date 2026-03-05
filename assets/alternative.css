@@ -323,14 +323,22 @@ iframe.directions {
     max-width: 800px; /* Limit maximum width */
     height: auto; /* Let the height be determined by the content */
     border: none;
+    display: block;
+    margin: 0 auto;
 }
 /*Set aspect ratio to iframe, if it is necessary*/
 iframe.registration{
         aspect-ratio: 1 / 2; /*width / height*/
+            display: block;
+    margin: 0 auto;
+
 }
 iframe.directions{
         aspect-ratio: 2 / 1;
+    display: block;
+    margin: 0 auto;
 }
+
 img.center {
     display: block;
     width: 90%; /* Responsive width */

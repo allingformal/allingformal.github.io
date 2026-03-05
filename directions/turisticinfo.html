@@ -1,30 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 
 <head>
     <base href="..">
-    <link rel="shortcut icon" type="image/png" href="images/2025-logosinfondo.svg"/>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/alternative.css"/>
     <meta name="description" content="Conference Template">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-
-    <title lang="en">Tourist information</title>
-    <title lang="es">Información turística</title>
-    <title lang="pt">Informação turística</title>
     
+    <style>
+        /* Hide elements not matching the selected language */
+body[data-lang="pt"] [lang="pt"],
+body[data-lang="en"] [lang="en"],
+body[data-lang="es"] [lang="es"] {
+    display: block;
+}
+
+body[data-lang="pt"] [lang="en"],
+body[data-lang="pt"] [lang="es"],
+body[data-lang="en"] [lang="pt"],
+body[data-lang="en"] [lang="es"],
+body[data-lang="es"] [lang="pt"],
+body[data-lang="es"] [lang="en"] {
+    display: none;
+}       
+    </style>
+    
+    <title>Local Information</title>
 </head>
 
 <body data-lang="en">
+
     <!-- Language selector -->
     <div>
         <label>
-            <input type="radio" name="language" value="en" checked>
+            <input type="radio" name="language" value="en">
             English
         </label>
         <label>
-            <input type="radio" name="language" value="es">
+            <input type="radio" name="language" value="es" checked>
             Español
         </label>
                 <label>
@@ -32,19 +48,20 @@
             Português
         </label>
     </div>
-    
+
+            <h1>Encuentro de la Asociación Latinoamericana de Lingüística Formal<br>Encontro da Associação Latino-Americana de Linguística Formal</h1>
+
     <div class="banner">
-        <img width=100%, height=auto src="images/2025-banner.png" alt="Conference Template Banner">
-<!--        <div class="top-left">
-            <span class="title1">Encuentro de Gramática Generativa</span> <span class="year">2025</span>
-        </div>-->
+        <img width=100%, height=auto src="images/2025-banner1.jpg" alt="Conference Template Banner">
+      
         <div lang="es" class="bottom-right">
-            Del 6 al 8 de Agosto de 2025 <br> Universidad de Buenos Aires, Argentina
+            26 y 27 de marzo de 2026 <br> Universidad de la República, Uruguay
+        </div>
+        <div lang="pt" class="bottom-right">
+            26 e 27 de março de 2026 <br> Universidad de la República, Uruguay
         </div>
 <div lang="en" class="bottom-right">
-            August 6 to 8, 2025 <br> University of Buenos Aires, Argentina</div>
-                    <div lang="pt" class="bottom-right">
-            De 6 a 8 de agosto de 2025 <br>Universidad de Buenos Aires, Argentina
+            March 26 and 27, 2026 <br>Universidad de la República, Uruguay
         </div>
     </div>
 
@@ -52,13 +69,13 @@
         <tr>
             <td class="navigation">
                 <a lang="en" class="current" title="Encuentro de Gramática Generativa" href="index.html">Home</a>
-                <a lang="es" class="current" title="Encuentro de Gramática Generativa" href="index.html">Página<br> principal</a>
-                <a lang="pt" class="current" title="Encuentro de Gramática Generativa" href="index.html">Página<br> inicial</a>
+                <a lang="es" class="current" title="Encuentro de Gramática Generativa" href="index.html">Página <br>principal</a>
+                <a lang="pt" class="current" title="Encuentro de Gramática Generativa" href="index.html">Página <br>inicial</a>
             </td>
             <td class="navigation">
-                <a lang="en" href="registration/registration.html" title="Register for the Conference" href="registration" href="registration.html">Registration</a>
-                <a lang="es" href="registration/registration.html" title="Inscripción al Encuentro" href="registration">Inscripción</a>
-                <a lang="pt" href="registration/registration.html" title="Inscripción al Encuentro" href="registration">Cadastro</a>
+                <a lang="en" href="registration/registration.html" title="Register for the Conference" href="registration" href="registration.html">Call for papers<br>Registration</a>
+                <a lang="es" href="registration/registration.html" title="Inscripción al Encuentro" href="registration">Convocatoria<br>Inscripción</a>
+                <a lang="pt" href="registration/registration.html" title="Inscripción al Encuentro" href="registration">Chamada<br>Cadastro</a>
             </td>
             <td class="navigation">
                 <a lang="en" title="Program" href="program/2025-program.html">Program</a> 
@@ -66,78 +83,319 @@
                 <a lang="pt" title="Programa" href="program/2025-program.html">Programa</a> 
             </td>
             <td class="navigation">
-                <a lang="en" title="Tourist information" href="directions/turisticinfo.html">Tourist<br> information</a>
-                <a lang="es" title="Información turística" href="directions/turisticinfo.html">Información<br> turística</a>
-                <a lang="pt" title="Información turística" href="directions/turisticinfo.html">Informação<br> turística</a>
+                <a lang="en" title="Local information and recommendations" href="directions/turisticinfo.html">Local information <br>and recommendations</a> 
+                <a lang="es" title="Información turística y recomendaciones" href="directions/turisticinfo.html">Información turística <br>y recomendaciones</a> 
+                <a lang="pt" title="Informações turísticas e recomendações" href="directions/turisticinfo.html">Informações turísticas <br>e recomendações</a> 
             </td>
             <td class="navigation">
-                <a lang="en" title="Previous editions" href="previous-editions/previous-editions.html">Previous<br> editions</a>
-                <a lang="es" title="Ediciones previas" href="previous-editions/previous-editions.html">Ediciones<br> previas</a>
-                <a lang="pt" title="Ediciones previas" href="previous-editions/previous-editions.html">Edições<br> anteriores</a>
+                <a lang="en" title="Editions" href="previous-editions/previous-editions.html">Editions</a>
+                <a lang="es" title="Ediciones" href="previous-editions/previous-editions.html">Ediciones</a>
+                <a lang="pt" title="Edições" href="previous-editions/previous-editions.html">Edições</a>
             </td>
+            <td class="navigation">
+                <a lang="en" title="New" href="news/index.html">News</a> 
+                <a lang="es" title="Novedades" href="news/index.html">Novedades</a> 
+                <a lang="pt" title="Notícias" href="news/index.html">Notícias</a> 
+            </td>
+
         </tr>
     </table>
-
-    <h2 lang="en">Restaurants and Cafes</h2>
-    <h2 lang="es">Restaurantes y cafeterías</h2>
-<h2 lang="pt">Restaurantes e cafés</h2>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6051.6277986646055!2d-58.44964108071887!3d-34.62836768225871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1ses-419!2sar!4v1751659787298!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    <table class="sponsors">
-            <tr>
-            <td class="sponsor" lang="es">
-            El evento cuenta con el patrocinio de la <br>
-            <a href="https://accmallmann.org/">Asociación Civil Carlos Mallmann</a><br>
-<a href="https://accmallmann.org/"><img width=5%, height=auto src="images/accm-logo-color-h.png" alt="First Sponsor Name">
-                </a>
-            </td>
-            <td class="sponsor" lang="en">
-            The event is sponsored by <br>
-            <a href="https://accmallmann.org/">Asociación Civil Carlos Mallmann</a><br>
-<a href="https://accmallmann.org/"><img width=5%, height=auto src="images/accm-logo-color-h.png" alt="First Sponsor Name">
-                </a>
-            </td>
-            <td class="sponsor" lang="pt">
-            O evento é patrocinado pela <br>
-            <a href="https://accmallmann.org/">Asociación Civil Carlos Mallmann</a><br>
-<a href="https://accmallmann.org/"><img width=5%, height=auto src="images/accm-logo-color-h.png" alt="First Sponsor Name">
-                </a>
-            </td>
-        </tr>
-    </table>
-
-  <footer lang="es">
-    Encuentro de Gramática Generativa (EGG)<br>
-    encuentrodegramaticagenerativa@gmail.com
+    
     <br>
-<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a> 
-<a href="https://www.instagram.com/encuentrodegramaticagenerativa/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a>
+
+    <h2 lang="en">Location</h2>
+    <h2 lang="es">Lugar</h2>
+<h2 lang="pt">Local</h2>
+
+    <p lang="es" align="justify">
+La sede del Primer Encuentro de la Asociación Latinoamericana de Lingüística Formal será la Facultad de Humanidades y Ciencias de la Educación (Av. Uruguay 1695).
+        </p>
+    <p lang="en" align="justify">
+The venue for the first meeting of the Latin American Association of Formal Linguistics will be the Faculty of Humanities and Sciences of Education (Av. Uruguay 1695).
+        </p>
+    <p lang="pt" align="justify">
+A sede do Primeiro Encontro da Associação Latino-Americana de Linguística Formal será a Faculdade de Humanidades e Ciências da Educação (Av. Uruguay 1695).
+        </p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.6818039657473!2d-56.18388862346487!3d-34.90072007324557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80357c610cad%3A0x33151dcc6ee06711!2sFacultad%20de%20Humanidades%20y%20Ciencias%20de%20la%20Educaci%C3%B3n%20%7C%20FHCE-UDELAR!5e1!3m2!1ses-419!2sar!4v1772742884531!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ 
+ 
+    <p lang="es" align="justify">
+        Cómo llegar
+Si llegan al aeropuerto de Carrasco, pueden tomarse un Uber, un taxi o un ómnibus que los deja en Tres Cruces. Al salir del aeropuerto, hay dos puntos de ómnibus. El primero, casi en frente de la salida, es el que tiene ómnibus locales. Estos pueden acercarlos un poco más a la zona céntrica, pero si tienen mucho equipaje son incómodos. El segundo punto, hacia la derecha, es el de los ómnibus que los dejan en Tres Cruces (terminal de ómnibus). Hay dos compañías y pueden comprar los pasajes online. Son más caros, pero tienen lugar para equipaje grande y son más cómodos. Al ser un viaje corto a Montevideo, pueden usar cualquiera de las compañías:
+<ul lang="es">
+<li><a href="https://cot.com.uy/">COT</a></li>
+<li><a href="https://www.copsa.com.uy/es/">COPSA</a></li>
+</ul>
+
+</p>
+
+    <p lang="es" align="justify">
+
+Si llegan a Tres cruces, y no tienen mucho equipaje, pueden ir caminando hacia la zona céntrica. También, pueden tomar ómnibus locales (pueden usar el Google maps para ver cuáles sirven). Estos ómnibus aceptan dinero en efectivo, o pueden comprar una tarjeta STM en la misma terminal de Tres Cruces.
+    </p>
+
+<p lang="pt" align="justify">
+    Como chegar
+Se você chegar ao aeroporto de Carrasco, pode pegar um Uber, um táxi ou um ônibus que te deixa em Tres Cruces. Ao sair do aeroporto, existem dois pontos de ônibus. A primeira, quase em frente à saída, é aquela com ônibus locais. Eles podem te aproximar um pouco mais do centro da cidade, mas se você tiver muita bagagem são desconfortáveis. O segundo ponto, à direita, é onde os ônibus param em Tres Cruces (terminal rodoviário). Existem duas empresas e você pode comprar ingressos online. São mais caros, mas têm espaço para bagagens grandes e são mais confortáveis. Como é uma viagem curta para Montevidéu, você pode utilizar qualquer uma das empresas:
+<ul lang="pt">
+<li><a href="https://cot.com.uy/">COT</a></li>
+<li><a href="https://www.copsa.com.uy/es/">COPSA</a></li>
+</ul>
+</p>
+<p lang="pt" align="justify">
+Se chegarem a Tres Cruces e não tiverem muita bagagem, podem ir caminhando até a área central. Também podem pegar ônibus locais (podem usar o Google Maps para ver quais servem). Esses ônibus aceitam dinheiro em espécie, ou podem comprar um cartão STM na própria terminal de Tres Cruces.
+</p>
+
+<p lang="en" align="justify">
+    How to get there
+If you arrive at Carrasco airport, you can take an Uber, a taxi, or a bus that drops you off at Tres Cruces. When you exit the airport, there are two bus stops. The first one, almost directly across from the exit, is the one with local buses. These can get you a bit closer to the city center, but they are uncomfortable if you have a lot of luggage. The second stop, to the right, is for the buses that take you to Tres Cruces (bus terminal). There are two companies and you can buy tickets online. They are more expensive, but they have space for large luggage and are more comfortable. Since it is a short trip to Montevideo, you can use either company:
+https://cot.com.uy/
+https://www.copsa.com.uy/es/
+</p>
+<p lang="en" align="justify">
+If you arrive at Tres Cruces and do not have much luggage, you can walk to the city center. You can also take local buses (you can use Google Maps to see which ones are useful). These buses accept cash, or you can buy an STM card at the Tres Cruces terminal itself.
+</p>
+
+    <h2 lang="en">Hotels</h2>
+    <h2 lang="es">Hoteles</h2>
+    <h2 lang="pt">Hotéis</h2>
+
+    <p lang="es" align="justify">
+Les recomendamos quedarse cerca de la zona de facultad, para que puedan ir a pie. Montevideo es una ciudad caminable.
+    </p>
+    <p lang="es" align="justify">
+    Estos son algunos de los hoteles cercanos:
+    </p>
+
+<ul lang="es">
+    <li>
+        <a href="https://www.hoteleuropa.com.uy/">Hotel Europa</a>: Hotel sencillo y cercano a facultad.
+    </li>
+    <li>
+        <a href="https://www.klee.com.uy/">Hotel Klee</a>: Hotel un poco menos sencillo que el Europa.
+    </li>
+    <li>
+        <a href="https://www.crystalpalacehotel.com.uy/">Crystal Palace Hotel</a>: Hotel un poco mejor que el Klee.
+    </li>
+    <li>
+        <a href="https://ahivamontevideo.uy/">Ahí Va Montevideo</a>: Este es un hostal económico cercano (es muy cerca de Facultad, pero hay que ser cuidadoso a la noche, si es tarde). Está bien evaluado en Booking.
+    </li>
+</ul>
+
+    <p lang="es" align="justify">
+Otra opción es quedarse en Pocitos, Punta Carretas o Parque Rodó. Allí tendrían que usar taxi, Uber o ómnibus para ir a la sede del encuentro.
+    </p>
+
+
+    <p lang="pt" align="justify">
+    Hotéis perto da faculdade:
+</p>
+
+    <ul lang="pt">
+    <li>
+        <a href="https://www.hoteleuropa.com.uy/">Hotel Europa</a>
+    </li>
+    <li>
+        <a href="https://www.klee.com.uy/">Hotel Klee</a>
+    </li>
+    <li>
+        <a href="https://www.crystalpalacehotel.com.uy/">Crystal Palace Hotel</a>
+    </li>
+    <li>
+        <a href="https://ahivamontevideo.uy/">Ahí Va Montevideo</a>: Este é um hostal económico cercano (bem perto de Facultad, más tem que ser cuidadoso à noite, se for muito tarde). Está bem avaliado no Booking
+    </li>
+</ul>
+
+    <p lang="pt" align="justify">
+Uma outra opção é se hospedar em Pocitos, Punta Carreta ou Parque Rodó. De lá é recomendável pegar transporte público até a faculdade, seja táxi, Uber ou ônibus.
+</p>
+
+
+    <p lang="en" align="justify">
+    Hotels near the Faculty:
+</p>
+
+<ul lang="en">
+    <li>
+        <a href="https://www.hoteleuropa.com.uy/">Hotel Europa</a>: Simple hotel, close to the faculty.
+    </li>
+    <li>
+        <a href="https://www.klee.com.uy/">Hotel Klee</a>: Slightly less basic than the Europa.
+    </li>
+    <li>
+        <a href="https://www.crystalpalacehotel.com.uy/">Crystal Palace Hotel</a>: A step up from the Klee.
+    </li>
+    <li>
+        <a href="https://ahivamontevideo.uy/">Ahí Va Montevideo</a>: This is an affordable hostel nearby (very close to the faculty, but be careful at night if it's late). It is well reviewed on Booking.
+    </li>
+</ul>
+
+<p lang="en" align="justify">
+Another option is to stay in Pocitos, Punta Carretas, or Parque Rodó. From there, you would need to take a taxi, Uber, or bus to get to the conference venue.
+</p>
+
+
+<h2 lang="en">Touristic recommendations</h2>
+    <h2 lang="es">Recomendaciones turísticas</h2>
+    <h2 lang="pt">Recomendações turísticas</h2>
+
+    <p lang="es" align="justify">
+El domingo es lindo ir a la feria Tristán Narvaja, vale la pena. Si van, tengan cuidado con sus pertenencias. Si bien es un lugar seguro, es mejor no andar desprevenido: <a href="https://es.wikipedia.org/wiki/Feria_de_Trist%C3%A1n_Narvaja" target="_blank">Wikipedia</a>
+</p>
+    <p lang="es" align="justify">
+El <a href="https://www.museos.gub.uy/index.php/museos/museos-por-localidad/montevideo/item/233-museo-nacional-de-artes-visuales" target="_blank">Museo Nacional de Artes Visuales</a> es muy lindo y gratuito. Tiene una cafetería con rico café y es en Parque Rodó.
+    </p>
+    <p lang="es" align="justify">
+En Ciudad Vieja, están los museos de Torres García, Gurvich y Figari que valen la pena. No son gratuitos.
+</p>
+    <ul lang="es">
+        <li><a href="https://www.torresgarcia.org.uy/">Museo Torres García</a></li>
+        <li><a href="https://www.museogurvich.org/museo/">Museo Gurvich</a></li>
+        <li><a href="https://www.museofigari.gub.uy/">Museo Figari</a></li>
+    </ul>
+
+    <p lang="es" align="justify">
+    Lugares que vale la pena visitar: la rambla de Montevideo, el parque Rodó, la ciudad Vieja, librería Puro Verso en Ciudad Vieja, el mercado del Puerto.
+</p>
+
+  
+    <p lang="pt" align="justify">
+    No domingo é bom ir à feira Tristán Narvaja, vale a pena. Se for, tome cuidado com seus pertences. Embora seja um local seguro, é melhor não estar despreparado: <a href="https://es.wikipedia.org/wiki/Feria_de_Trist%C3%A1n_Narvaja" target="_blank">Wikipedia</a>
+    </p>
+
+    <p lang="pt" align="justify">
+O <a href="https://www.museos.gub.uy/index.php/museos/museos-por-localidad/montevideo/item/233-museo-nacional-de- artes- visuais" target="_blank">Museu Nacional de Artes Visuais</a> é muito bonito e gratuito. Tem uma cafeteria com um delicioso café e fica no Parque Rodó
+    </p>
+    <p lang="pt" align="justify">
+    Em Ciudad Vieja estão os museus Torres García, Gurvich e Figari que valem a pena. Eles não são gratuitos.
+    </p>
+    <ul lang="pt">
+        <li><a href="https://www.torresgarcia.org.uy/">Museu Torres García</a></li>
+        <li><a href="https://www.museogurvich.org/museo/">Museu Gurvich</a></li>
+        <li><a href="https://www.museofigari.gub.uy/">Museu Figari</a></li>
+    </ul>
+    <p lang="pt" align="justify">
+Lugares que valem a pena visitar: a rambla de Montevidéu, o parque Rodó, a Cidade Velha, a livraria Puro Verso na Cidade Velha, o mercado de Puerto.
+    </p>
+
+<p lang="en" align="justify">
+On Sundays, the Tristán Narvaja street market is well worth a visit. If you go, keep an eye on your belongings. While it is a safe place, it is better to stay alert: <a href="https://es.wikipedia.org/wiki/Feria_de_Trist%C3%A1n_Narvaja" target="_blank">Wikipedia</a>
+</p>
+<p lang="en" align="justify">
+The <a href="https://www.museos.gub.uy/index.php/museos/museos-por-localidad/montevideo/item/233-museo-nacional-de-artes-visuales" target="_blank">National Museum of Visual Arts</a> is beautiful and free of charge. It has a café with great coffee and is located in Parque Rodó.
+</p>
+<p lang="en" align="justify">
+In the Old City, the Torres García, Gurvich, and Figari museums are all worth a visit. They are not free.
+</p>
+<ul lang="en">
+    <li><a href="https://www.torresgarcia.org.uy/">Torres García Museum</a></li>
+    <li><a href="https://www.museogurvich.org/museo/">Gurvich Museum</a></li>
+    <li><a href="https://www.museofigari.gub.uy/">Figari Museum</a></li>
+</ul>
+<p lang="en" align="justify">
+Places worth visiting: the Montevideo boardwalk (rambla), Parque Rodó, the Old City, Puro Verso bookstore in the Old City, and the Mercado del Puerto.
+</p>
+
+    <h2 lang="es">Cafés, restaurantes, cervecerías y locales cercanos</h2>    
+    <h2 lang="pt">Cafés, restaurantes, cervejarias e locais próximos</h2>    
+    <h2 lang="en">Cafes, restaurants, breweries and nearby places</h2>
+
+    <ul lang="es">
+        <li><a href="https://escaramuza.com.uy/"></a>Escaramuza</a>: es una librería con restaurante muy bonita.</li>
+        <li><a href="https://www.instagram.com/hey_chopp/" target="_blank">Hey Chopp</a>: un lugar con cervezas artesanales muy ricas.</li>
+        <li><a href="https://www.instagram.com/mercadoferrando/">Mercado Ferrando</a></li>
+        <li><a href="https://cervezamalafama.com/" target="_blank">Mala Fama</a>: tienen buenas cervezas.</li>
+    </ul>
+
+    <ul lang="pt">
+        <li><a href="https://escaramuza.com.uy/"></a>Escaramuza</a>: é uma livraria com restaurante, é muito bonita.</li>
+        <li><a href="https://www.instagram.com/hey_chopp/" target="_blank">Hey Chopp</a>: é um lugar com cervejas artesanais muito boas.</li>
+        <li><a href="https://www.instagram.com/mercadoferrando/">Mercado Ferrando</a></li>
+        <li><a href="https://cervezamalafama.com/" target="_blank">Mala Fama</a>: têm cervejas muito boas.</li>
+    </ul>
+
+    <ul lang="en">
+    <li><a href="https://escaramuza.com.uy/">Escaramuza</a>: a beautiful bookstore with a restaurant.</li>
+    <li><a href="https://www.instagram.com/hey_chopp/" target="_blank">Hey Chopp</a>: a place with great craft beers.</li>
+    <li><a href="https://www.instagram.com/mercadoferrando/">Mercado Ferrando</a></li>
+    <li><a href="https://cervezamalafama.com/" target="_blank">Mala Fama</a>: they have good beers.</li>
+</ul>
+
+
+<h2 lang="pt">Vinhos e vendimia</h2>
+<h2 lang="es">Vinos y vendimia</h2>
+<h2 lang="en">Wines and harvest</h2>
+
+    <p lang="es" align="justify">
+En febrero y marzo es la vendimia en Uruguay. Muchas son antes de nuestro encuentro, pero hay dos actividades relacionadas que ocurren en el fin de semana anterior y el posterior.
+    </p>
+
+    <ul lang="es">
+<li>23 de marzo: <a href="https://www.varelazarranz.com/vivi-la-vendimia-en-varela-zarranz/" target="_blank">Bodega Varela Zarranz (cercana a Montevideo y ofrecen transporte)</a></li>
+<li>28 de marzo: <a href="https://pizzornowines.com/visitenos/" target="_blank">Bodega Pizzorno: Sunset fin de cosecha</a>.
+</li>
+    </ul>  
+    <p lang="es" align="justify">
+    Si alguien quiere conocer otras bodegas (en otros departamentos), puede ir a la página del <a href="https://www.inavi.com.uy/bodegas/" target="_blank">INAVI (instituto Nacional do Vinho)</a>.
+</p>
+
+
+    <p lang="pt" align="justify">
+Em Fevereiro e março, é a época da colheita da uva no Uruguai. Muitos eventos acontecem antes do nosso encontro, mas há duas atividades relacionadas que ocorrem no fim de semana anterior e posterior.
+    </p>
+
+    <ul lang="pt">
+<li>23 de março: <a href="https://www.varelazarranz.com/vivi-la-vendimia-en-varela-zarranz/" target="_blank">Bodega Varela Zarranz (perto de Montevideu e ofoerece transporte)</a></li>
+<li>28 de março: <a href="https://pizzornowines.com/visitenos/" target="_blank">Bodega Pizzorno: Sunset fin de cosecha</a>.
+</li>
+    </ul>  
+    <p lang="pt" align="justify">
+    Por outras bodegas, em outros lugares, podem entrar no site do <a href="https://www.inavi.com.uy/bodegas/" target="_blank">INAVI (instituto Nacional do Vinho)</a>.
+</p>
+
+<p lang="en" align="justify">
+February and March are harvest season in Uruguay. Many events take place before our conference, but there are two related activities happening the weekend before and the weekend after.
+</p>
+
+<ul lang="en">
+    <li>March 23: <a href="https://www.varelazarranz.com/vivi-la-vendimia-en-varela-zarranz/" target="_blank">Varela Zarranz Winery (close to Montevideo, transportation provided)</a></li>
+    <li>March 28: <a href="https://pizzornowines.com/visitenos/" target="_blank">Pizzorno Winery: Sunset end-of-harvest event</a>.</li>
+</ul>
+<p lang="en" align="justify">
+If anyone would like to visit other wineries (in other regions), you can visit the <a href="https://www.inavi.com.uy/bodegas/" target="_blank">INAVI (National Wine Institute)</a> website.
+</p>
+
+   <footer lang="es">
+    Asociación Latinoamericana de Lingüística Formal / Associação Latino-Americana de Linguística Formal (ALLF)<br>
+    allingformal@gmail.com
+    <br>
+<!--<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a> 
+<a href="https://www.instagram.com/encuentrodegramaticagenerativa/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a>-->
 <br>
 Este sitio está construido por sobre la plantilla diseñada por <a href="https://github.com/mikepierce">Mike Pierce</a>
   </footer>
-  
+ 
+   <footer lang="pt">
+    Asociación Latinoamericana de Lingüística Formal / Associação Latino-Americana de Linguística Formal (ALLF)<br>
+    allingformal@gmail.com
+    <br>
+<!--<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a> 
+<a href="https://www.instagram.com/encuentrodegramaticagenerativa/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a><br>-->
+Este site foi construído com base no modelo desenvolvido por <a href="https://github.com/mikepierce">Mike Pierce</a>
+  </footer>
+ 
       <footer lang="en">
-    Encuentro de Gramática Generativa (EGG).
-    <br>
-    encuentrodegramaticagenerativa@gmail.com
-    <br>
-<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a>
-<a href="https://www.instagram.com/encuentrodegramaticagenerativa/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a> 
+    Asociación Latinoamericana de Lingüística Formal / Associação Latino-Americana de Linguística Formal (ALLF)<br>
+    allingformal@gmail.com
+        <br>
+<!--<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a>
+<a href="https://www.instagram.com/encuentrodegramaticagenerativa/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a> -->
 <br>
         This webpage is build over the template designed by <a href="https://github.com/mikepierce">Mike Pierce</a>
 
     </footer>
 
-  <footer lang="pt">
-    Encuentro de Gramática Generativa (EGG)<br>
-    encuentrodegramaticagenerativa@gmail.com
-    <br>
-<a href="https://www.facebook.com/EncuentroGG?locale=es_LA" target="_blank"><img src="images/facebook-logo.svg" alt="" width="26" height="26" title="Facebook"></a>
-<a href="https://www.instagram.com/encuentrodegramaticagenerativa/" target="_blank"><img src="images/instagram-logo.svg" alt="" width="26" height="26" title="Instagram"></a> 
-<br>
-Este site foi construído com base no modelo desenvolvido por <a href="https://github.com/mikepierce">Mike Pierce</a>
-  </footer>
     
 <script>
         // Language switching functionality
